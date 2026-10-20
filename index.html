@@ -4,11 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fredy Gonzales — Arquitectura, Automatización & IA</title>
+  <title>Fredy Gonzales — Engineering Manager · Arquitectura · Automatización · IA</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/facetas.css">
   <link rel="stylesheet" href="css/cursos.css">
@@ -16,76 +14,94 @@
 </head>
 
 <body>
+
+  <!-- ========== HEADER ========== -->
   <header class="dark-glass">
     <div class="container" style="display:flex;justify-content:space-between;align-items:center;">
       <a class="brand" href="#top">
-        <img src="img/LogoFredyGonzales3.png" alt="Fredy Gonzales Logo" class="brand-image"
-          style="height: 60px; width: 240px;" />
+        <img src="img/LogoFredyGonzales3.png" alt="Fredy Gonzales Logo" class="brand-image" style="height:60px;width:240px;" />
       </a>
-      <nav>
+      <nav id="mainNav">
         <a href="#about"><i class="fa-solid fa-user"></i> Sobre mí</a>
         <a href="#skills"><i class="fa-solid fa-code"></i> Skills</a>
         <a href="#experience"><i class="fa-solid fa-briefcase"></i> Experiencia</a>
         <a href="#portfolio"><i class="fa-solid fa-diagram-project"></i> Portafolio</a>
         <a href="#courses"><i class="fa-solid fa-graduation-cap"></i> Cursos</a>
         <a href="#services"><i class="fa-solid fa-gears"></i> Servicios</a>
-        <a href="#contact" class="btn-outline"><i class="fa-solid fa-paper-plane"></i> Contacto</a>
+        <a href="#contact" class="btn-cta"><i class="fa-solid fa-rocket"></i> Trabajemos juntos</a>
       </nav>
+      <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
   </header>
 
-  <section id="top" class="hero">
+  <!-- ========== HERO ========== -->
+  <section id="top" class="hero hero-dark">
     <div class="container hero-flex">
 
-      <!-- COLUMNA IZQUIERDA (TEXTO) -->
+      <!-- IZQUIERDA -->
       <div class="hero-left">
-        <h1>Bachiller en Ingeniería de Sistemas e Informática</h1>
-        <p>👨‍💻 Profesional en Sistemas con más de 14 años de experiencia liderando proyectos de transformación
-          tecnológica en el sector financiero.
-          Apasionado por conectar el negocio con la tecnología, he desarrollado soluciones innovadoras que han
-          optimizado procesos clave como el cierre contable,
-          mejorando significativamente los tiempos de ejecución.</p>
-        <p> ✨ A lo largo de mi trayectoria he cultivado aptitudes que definen mi enfoque profesional:</p>
-        <ul>
-          <li>🧭 Liderazgo tecnológico: dirección de equipos multidisciplinarios con visión estratégica.</li>
-          <li>🔄 Transformación de procesos: rediseño y mejora continua con enfoque en resultados.</li>
-          <li>🏗️ Arquitectura empresarial y de soluciones: diseño de sistemas alineados al negocio.</li>
-          <li>🤖 Automatización e integración: uso de tecnologías RPA y plataformas modernas.</li>
-          <li>⚙️ Mentalidad ágil y DevOps: implementación de prácticas colaborativas y entrega continua.</li>
-        </ul>
+        <p class="hero-eyebrow">Engineering Manager · Tech Lead · Enterprise Architect</p>
+        <h1 class="hero-headline">Transformo procesos lentos<br>en sistemas que se ejecutan solos.</h1>
+        <p class="hero-sub">
+          14 años liderando iniciativas de automatización, arquitectura empresarial y transformación digital
+          en el sector financiero y de salud. Hablo con el CEO el lunes y reviso código el martes.
+        </p>
 
-        🌐 Creo en la tecnología como motor de cambio y me comprometo con proyectos que impulsen la innovación, la
-        eficiencia y el crecimiento sostenible.</p>
+        <!-- MÉTRICAS -->
+        <div class="hero-metrics">
+          <div class="metric">
+            <span class="metric-num">102</span>
+            <span class="metric-label">bots en producción</span>
+          </div>
+          <div class="metric">
+            <span class="metric-num">-97%</span>
+            <span class="metric-label">tiempo de proceso crítico</span>
+          </div>
+          <div class="metric">
+            <span class="metric-num">30+</span>
+            <span class="metric-label">sistemas legacy eliminados</span>
+          </div>
+          <div class="metric">
+            <span class="metric-num">14</span>
+            <span class="metric-label">años de experiencia</span>
+          </div>
+        </div>
 
-        <div class="tags">
-          <span class="tag">RPA</span>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn-primary"><i class="fa-solid fa-rocket"></i> Trabajemos juntos</a>
+          <a href="https://wa.me/51955475970" class="btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+
+        <div class="tags" style="margin-top:1.5rem;">
+          <span class="tag">Engineering Manager</span>
+          <span class="tag">RPA / Automatización</span>
           <span class="tag">Automation Anywhere</span>
           <span class="tag">Workato</span>
-          <span class="tag">.NET</span>
-          <span class="tag">PHP</span>
-          <span class="tag">Java</span>
+          <span class="tag">.NET / C#</span>
           <span class="tag">SQL Server</span>
           <span class="tag">C4 Model</span>
-          <span class="tag">Cloud Migration</span>
+          <span class="tag">Azure · GCP</span>
           <span class="tag">IA aplicada</span>
+          <span class="tag">Agile Coaching</span>
         </div>
       </div>
 
-      <!-- COLUMNA DERECHA (FOTO + INFO) -->
+      <!-- DERECHA -->
       <div class="hero-right">
         <div class="hero-card">
           <div class="photo-frame">
             <img src="img/perfil-placeholder.jpg" alt="Fredy Gonzales — Foto profesional" />
           </div>
-
           <div class="quick-info">
-            <p><strong>Servicios:</strong> • Desarrollo • Consultoría • Workshops • Implementación</p>
-            <p><strong>Local:</strong> Lima, Perú</p>
-
+            <p><strong>Disponible para:</strong> Consultoría · Proyectos · Workshops · Docencia</p>
+            <p><strong>Ubicación:</strong> Lima, Perú</p>
             <div class="socials">
-              <a href="https://www.linkedin.com/in/fredy-benjam%C3%ADn-gonz%C3%A1les-uriarte-b7967159/"
-                target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://wa.me/51955475970" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://www.linkedin.com/in/fredy-benjam%C3%ADn-gonz%C3%A1les-uriarte-b7967159/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://wa.me/51955475970" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://github.com/FredyGonzales" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://youtube.com/@FredyGonzalesUriarte" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
             </div>
           </div>
         </div>
@@ -94,29 +110,103 @@
     </div>
   </section>
 
+  <!-- ========== CON QUIÉN HE TRABAJADO ========== -->
+  <section id="companies" class="companies-section">
+    <div class="container">
+      <p class="companies-label">Empresas e instituciones con las que he trabajado</p>
+      <div class="companies-grid">
+        <div class="company-badge"><i class="fa-solid fa-building-columns"></i> AUNA</div>
+        <div class="company-badge"><i class="fa-solid fa-shield-halved"></i> Interseguro</div>
+        <div class="company-badge"><i class="fa-solid fa-tooth"></i> Col. Odontológico Callao</div>
+        <div class="company-badge"><i class="fa-solid fa-chalkboard-user"></i> IDAT</div>
+        <div class="company-badge"><i class="fa-solid fa-graduation-cap"></i> ZEGEL</div>
+        <div class="company-badge"><i class="fa-brands fa-linkedin"></i> IN Learning</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LOGROS (NÚMEROS QUE HABLAN) ========== -->
+  <section id="logros" class="logros-section">
+    <div class="container">
+      <h2>Resultados que se miden</h2>
+      <p class="section-subtitle">No solo entrego proyectos — entrego impacto.</p>
+      <div class="logros-grid">
+        <div class="logro-card">
+          <i class="fa-solid fa-robot logro-icon"></i>
+          <h3>102 bots</h3>
+          <p>gestionados en producción con SLA garantizado</p>
+        </div>
+        <div class="logro-card">
+          <i class="fa-solid fa-bolt logro-icon"></i>
+          <h3>-97% tiempo</h3>
+          <p>proceso crítico de 10 horas reducido a 15 minutos en .NET</p>
+        </div>
+        <div class="logro-card">
+          <i class="fa-solid fa-users logro-icon"></i>
+          <h3>+30% eficiencia</h3>
+          <p>en equipos de desarrollo liderados como Tech Lead</p>
+        </div>
+        <div class="logro-card">
+          <i class="fa-solid fa-trash-can logro-icon"></i>
+          <h3>30+ sistemas</h3>
+          <p>legacy eliminados, reduciendo costos y riesgo operacional</p>
+        </div>
+        <div class="logro-card">
+          <i class="fa-solid fa-money-bill-trend-up logro-icon"></i>
+          <h3>$500K</h3>
+          <p>proyecto liderado como Engineering Manager en AUNA</p>
+        </div>
+        <div class="logro-card">
+          <i class="fa-solid fa-calendar-check logro-icon"></i>
+          <h3>3 meses → 15 días</h3>
+          <p>reducción en tiempo de priorización de iniciativas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOBRE MÍ ========== -->
   <section id="about">
     <div class="container">
-      <h2>Sobre mí</h2>
-      <p>Mi camino no se limita únicamente al ámbito tecnológico. Creo firmemente que el conocimiento,
-        el arte y la creatividad son pilares fundamentales para el crecimiento personal y profesional.
-        Por ello, he desarrollado diferentes facetas que reflejan mi pasión por enseñar, crear y compartir ideas.
-        Estas son algunas de las dimensiones que complementan mi trayectoria:</p>
+      <h2>¿Por qué yo?</h2>
+      <div class="about-why">
+        <p>
+          Soy <strong>Engineering Manager y Arquitecto Empresarial</strong> con experiencia comprobada en banca, seguros y salud.
+          No solo diseño arquitecturas — las implemento, lidero al equipo y mido el impacto.
+          Conecto la visión del negocio con la ejecución técnica: hablo el idioma del CEO y el del desarrollador.
+        </p>
+        <p>
+          Mi enfoque combina <strong>liderazgo técnico, transformación de procesos y mentalidad ágil</strong>.
+          Si necesitas a alguien que entienda el problema de fondo antes de proponer una solución, llegaste al lugar correcto.
+        </p>
+      </div>
+
+      <p style="margin-top:2rem;">
+        Además de mi faceta técnica, creo que el conocimiento, el arte y la creatividad son pilares del crecimiento personal.
+        Por eso desarrollo distintas dimensiones que enriquecen mi manera de liderar y comunicar:
+      </p>
 
       <section class="facetas-section">
         <h2>Mis Facetas</h2>
-        <p class="facetas-intro">
-          A lo largo de mi vida he desarrollado diferentes pasiones que combinan educación, arte y creatividad.
-        </p>
+        <p class="facetas-intro">Educación, arte y tecnología conviven en mi trayectoria.</p>
 
         <div class="facetas-grid">
 
+          <!-- Empresa -->
+          <div class="faceta-card faceta-card--static">
+            <img src="img/facetas/docente.png" alt="Fenix Corp">
+            <div class="faceta-content">
+              <h3>🏢 Fenix Corp</h3>
+              <p>Mi <strong>Company One</strong>: el paraguas bajo el cual ofrezco consultoría, desarrollo de software, cursos y servicios de automatización e IA. Próximamente, sitio dedicado.</p>
+            </div>
+          </div>
+
           <!-- Docente -->
           <a href="docente.html" class="faceta-card">
-            <img src="img/facetas/docente.png" alt="Fenix Academy">
+            <img src="img/facetas/docente.png" alt="Docente">
             <div class="faceta-content">
               <h3>👨‍🏫 Docente</h3>
-              <p>Fundador de <strong>Fenix Academy</strong>, donde enseño tecnología, automatización y herramientas
-                digitales para el trabajo moderno.</p>
+              <p>Cursos en <strong>IDAT, ZEGEL, IN Learning y Fenix Academy</strong> sobre automatización, IA, Scrum y desarrollo. +30 alumnos capacitados.</p>
             </div>
           </a>
 
@@ -125,8 +215,7 @@
             <img src="img/facetas/cutervino1.jpg" alt="El Show del Cutervino">
             <div class="faceta-content">
               <h3>🎭 Imitador</h3>
-              <p>Creador de <strong>El Show del Cutervino</strong>, un espacio de humor y entretenimiento inspirado en
-                personajes de la cultura popular.</p>
+              <p>Creador de <strong>El Show del Cutervino</strong>, espectáculo de humor, imitaciones y reflexiones para eventos culturales y empresariales.</p>
             </div>
           </a>
 
@@ -135,8 +224,7 @@
             <img src="img/facetas/escritor.png" alt="El Poeta del Ilucán">
             <div class="faceta-content">
               <h3>✍️ Escritor</h3>
-              <p>Autor bajo el seudónimo <strong>El Poeta del Ilucán</strong>, compartiendo reflexiones, poesía y
-                pensamientos sobre la vida.</p>
+              <p>Autor bajo el seudónimo <strong>El Poeta del Ilucán</strong> con 18 libros publicados sobre amor, liderazgo, tecnología y crecimiento personal.</p>
             </div>
           </a>
 
@@ -145,186 +233,281 @@
     </div>
   </section>
 
+  <!-- ========== SKILLS ========== -->
   <section id="skills">
     <div class="container">
       <h2>Habilidades Técnicas</h2>
       <div class="skills-grid">
         <div class="skill-box">
-          <h3>Desarrollo</h3>
-          <p>.NET / C#, PHP, Java, VB.NET, SQL Server, Web Apps, Multiprocesos, Reporting Services</p>
+          <h3><i class="fa-solid fa-code"></i> Desarrollo</h3>
+          <p>.NET / C#, PHP, Java, VB.NET, SQL Server, REST APIs, Microservicios, Web Apps, Reporting Services</p>
         </div>
         <div class="skill-box">
-          <h3>Automatización</h3>
-          <p>Automation Anywhere, Automy, Workato, Diseño de bots, Integraciones</p>
+          <h3><i class="fa-solid fa-robot"></i> Automatización</h3>
+          <p>Automation Anywhere, Make, n8n, Automy, Workato, Google App Script, RPA, Bots en producción</p>
         </div>
         <div class="skill-box">
-          <h3>Arquitectura</h3>
-          <p>C4 Model, Diseño de soluciones, Inventario empresarial, Modernización SI</p>
+          <h3><i class="fa-solid fa-sitemap"></i> Arquitectura</h3>
+          <p>C4 Model, Arquitectura Empresarial, Inventario TI, Modernización de sistemas, Diseño E2E</p>
         </div>
         <div class="skill-box">
-          <h3>Nube</h3>
-          <p>Migración a Cloud, Infraestructura, Optimización de sistemas</p>
+          <h3><i class="fa-solid fa-cloud"></i> Nube</h3>
+          <p>Azure Cloud, Google Cloud Platform, AWS, Migración, CI/CD, DevOps, Infraestructura</p>
         </div>
         <div class="skill-box">
-          <h3>Agilidad</h3>
-          <p>Scrum, Agile Coach, Product Owner Assistant, Mejora continua</p>
+          <h3><i class="fa-solid fa-person-running"></i> Agilidad</h3>
+          <p>Scrum, Kanban, SAFe, Agile Coach, Product Ownership, OKRs, Facilitación</p>
         </div>
         <div class="skill-box">
-          <h3>Inteligencia Artificial</h3>
-          <p>IA generativa aplicada, agentes IA, automatización con IA</p>
+          <h3><i class="fa-solid fa-brain"></i> Inteligencia Artificial</h3>
+          <p>IA Generativa aplicada, Agentes IA, Automatización cognitiva, ChatGPT, Looker Studio, Power BI</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ========== EXPERIENCIA ========== -->
   <section id="experience">
     <div class="container">
       <h2>Experiencia Profesional</h2>
       <div class="exp-grid">
-        <div class="exp-card">
-          <h3>Responsable de Sistemas — Colegio Odontologico del Perú Región Callao (2026)</h3>
-          <p>Actualmente acompaño a la institución, generando automatizaciones, supervisando la operativa tecnologica y brindo soporte a los procesos.
-              Tecnologías: WordPress, Google App Script, PHP, MySQL</p>
+
+        <div class="exp-card exp-card--highlight">
+          <span class="exp-badge">Actual</span>
+          <h3>Engineering Manager — AUNA <span class="exp-year">May 2026 – Actualidad</span></h3>
+          <p>Lideré el proyecto <strong>Laboratorio Web Empresas 2.0</strong> (presupuesto $500K), integrando pasarela de pago Niubiz, Core de Laboratorio Enterprise Lis y facturación SAP. Gestiono el <strong>POD Evolution</strong>, reduciendo deuda técnica y generando métricas de respuesta óptimas para el Digital de Auna.</p>
+          <div class="exp-tags"><span>Azure</span><span>SAP</span><span>REST APIs</span><span>Liderazgo técnico</span></div>
         </div>
+
         <div class="exp-card">
-          <h3>Automation Coordinator — Interseguro (2025)</h3>
-          <p>Lideré el Squad de Automatización administrando 102 bots corporativos para acelerar procesos y reducir
-            costos. Tecnologías: Automation Anywhere, Automy, Workato.</p>
+          <h3>Responsable de Sistemas — Col. Odontológico Callao <span class="exp-year">Ene 2026 – Abr 2026</span></h3>
+          <p>Lideré el área de TI, implementé automatizaciones RPA y low-code, garantizando la continuidad operativa y modernizando flujos institucionales.</p>
+          <div class="exp-tags"><span>WordPress</span><span>Google App Script</span><span>PHP</span><span>MySQL</span></div>
         </div>
+
         <div class="exp-card">
-          <h3>IT Business Partner — Interseguro (2024)</h3>
-          <p>Conexión clave entre negocio y TI para modernizar procesos, reutilizar tecnología e impulsar eficiencia.
-          </p>
+          <h3>Automation Tech Lead — Interseguro <span class="exp-year">Nov 2024 – Jun 2025</span></h3>
+          <p>Lideré el Squad de Automatización con <strong>102 bots en producción</strong>. Definí el roadmap de automatización por ROI, aseguré SLA de disponibilidad y generé eficiencias sostenidas en múltiples líneas de negocio.</p>
+          <div class="exp-tags"><span>Automation Anywhere</span><span>Workato</span><span>Make</span><span>Automy</span></div>
         </div>
+
         <div class="exp-card">
-          <h3>Agile Coach — CoE Ágil (2023–2024)</h3>
-          <p>Aumenté en 30% la eficiencia de equipos de desarrollo. Creador de la Tribu TI y reestructuración de
-            iniciativas.</p>
+          <h3>IT Business Partner — Interseguro <span class="exp-year">Abr 2024 – Oct 2024</span></h3>
+          <p>Enlace clave entre negocio y tecnología. Fomentó la reutilización de APIs, reduciendo tiempos y costos de implementación en nuevas iniciativas de transformación digital.</p>
+          <div class="exp-tags"><span>APIs</span><span>Transformación digital</span><span>Stakeholders</span></div>
         </div>
+
         <div class="exp-card">
-          <h3>Arquitecto Empresarial & Soluciones (2019–2022)</h3>
-          <p>Primer Arquitecto Empresarial. Eliminación de 30+ sistemas obsoletos, diseño C4 y optimización TI.</p>
+          <h3>Tech Lead — Interseguro <span class="exp-year">Ene 2023 – Mar 2024</span></h3>
+          <p>Lideré técnicamente 4 squads, incrementando la eficiencia en <strong>+30%</strong> y reduciendo el tiempo de priorización de iniciativas de 3 meses a 15 días.</p>
+          <div class="exp-tags"><span>Scrum</span><span>Kanban</span><span>Arquitectura</span><span>Mentoría</span></div>
         </div>
+
         <div class="exp-card">
-          <h3>Desarrollo de Software (2015–2019)</h3>
-          <p>Migré un sistema de 10h a 15min mediante multiprocesamiento .NET. Desarrollo de sistemas críticos.</p>
+          <h3>Arquitecto Empresarial — Interseguro <span class="exp-year">Sep 2019 – Dic 2022</span></h3>
+          <p>Primer Arquitecto Empresarial de la compañía. Diseñé arquitecturas E2E con C4 Model, eliminé <strong>+30 sistemas obsoletos</strong> y establecí el gobierno tecnológico institucional.</p>
+          <div class="exp-tags"><span>C4 Model</span><span>DevOps</span><span>CI/CD</span><span>Microservicios</span></div>
         </div>
+
+        <div class="exp-card">
+          <h3>Analista Senior / Dev — Interseguro <span class="exp-year">Mar 2015 – Ago 2019</span></h3>
+          <p>Desarrollé sistemas críticos de rentas vitalicias. Migré un proceso batch de <strong>10 horas a 15 minutos</strong> (-97%) usando .NET multihilo. Creé el primer BI institucional (BI Salomón).</p>
+          <div class="exp-tags"><span>.NET</span><span>C#</span><span>SQL Server</span><span>BI</span></div>
+        </div>
+
       </div>
     </div>
   </section>
 
+  <!-- ========== PORTAFOLIO ========== -->
   <section id="portfolio">
     <div class="container">
       <h2>Portafolio Profesional</h2>
-      <div class="portfolio-grid" style="grid-template-columns:repeat(3,1fr)">
+      <div class="portfolio-grid">
         <div class="port-card">
-          <h3>Automatización</h3>
-          <p>Gestión de 102 bots, automatizaciones complejas y optimización usando RPA.</p>
+          <i class="fa-solid fa-robot port-icon"></i>
+          <h3>Automatización RPA</h3>
+          <p>Gestión de 102 bots en producción, roadmap de automatización por ROI e integraciones complejas con Automation Anywhere, Workato y Make.</p>
         </div>
         <div class="port-card">
-          <h3>Arquitectura</h3>
-          <p>Journey to Cloud, eliminación de sistemas, inventario TI, arquitectura C4.</p>
+          <i class="fa-solid fa-sitemap port-icon"></i>
+          <h3>Arquitectura Empresarial</h3>
+          <p>Primer AE en Interseguro: Journey to Cloud, eliminación de 30+ sistemas, inventario TI corporativo y arquitecturas E2E con C4 Model.</p>
         </div>
         <div class="port-card">
-          <h3>Desarrollo</h3>
-          <p>Proyecto .NET crítico: reducción de 10h a 15min; web apps y sistemas escalables.</p>
+          <i class="fa-solid fa-code port-icon"></i>
+          <h3>Desarrollo de Software</h3>
+          <p>Proyecto .NET crítico: reducción de 10h a 15min (-97%). Web apps escalables, sistemas de rentas vitalicias y primer BI institucional.</p>
+        </div>
+        <div class="port-card">
+          <i class="fa-solid fa-hospital port-icon"></i>
+          <h3>AUNA — Lab Web Empresas 2.0</h3>
+          <p>Proyecto de $500K integrando Niubiz, Enterprise Lis y SAP para ofrecer servicios de laboratorio online de alto impacto.</p>
+        </div>
+        <div class="port-card">
+          <i class="fa-solid fa-people-group port-icon"></i>
+          <h3>Liderazgo de Squads</h3>
+          <p>4 squads multidisciplinarios liderados, +30% eficiencia, tiempo de priorización reducido de 3 meses a 15 días.</p>
+        </div>
+        <div class="port-card">
+          <i class="fa-solid fa-chalkboard-user port-icon"></i>
+          <h3>Docencia & Contenido</h3>
+          <p>Cursos en IDAT, ZEGEL, IN Learning y Fenix Academy. Webinars para +30 alumnos. 18 libros publicados.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ========== CURSOS ========== -->
   <section id="courses">
     <div class="container">
       <h2>Cursos Disponibles</h2>
-      <div class="courses-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;">
+      <p class="section-subtitle">Formación práctica dictada también en IDAT, ZEGEL e IN Learning.</p>
+      <div class="courses-grid">
         <div class="course-card">
-          <img src="img/cursos/ExcelParaElTrabajoChat.png" alt="Excel para el Trabajo" width="128px">
-          <h3>Excel para el trabajo</h3>
-          <p>Optimiza tu productividad, domina funciones y fórmulas, casos reales.</p>
+          <i class="fa-solid fa-file-excel course-icon"></i>
+          <h3>Excel para el Trabajo</h3>
+          <p>Funciones, automatización de reportes y dashboards para el trabajo del día a día.</p>
+          <a href="docente.html" class="btn-course">Ver curso</a>
         </div>
         <div class="course-card">
+          <i class="fa-solid fa-robot course-icon"></i>
           <h3>Automatización de Procesos</h3>
-          <p>Automatiza tareas simples con Google App Script, Make, n8n, ahorra tiempo y esfuerzo.</p>
+          <p>Google App Script, Make y n8n para automatizar tareas y ahorrar tiempo.</p>
+          <a href="docente.html" class="btn-course">Ver curso</a>
         </div>
         <div class="course-card">
-          <h3>Chat GPT para Productividad</h3>
-          <p>Usa IA en el trabajo, Creación de Documentos, Resuelve tareas rapido.</p>
+          <i class="fa-solid fa-brain course-icon"></i>
+          <h3>IA para la Productividad</h3>
+          <p>ChatGPT, agentes IA y herramientas generativas para el trabajo moderno.</p>
+          <a href="docente.html" class="btn-course">Ver curso</a>
         </div>
         <div class="course-card">
+          <i class="fa-solid fa-code course-icon"></i>
           <h3>Desarrollo de Software para Todos</h3>
-          <p>Fundamentos para principiantes, ejercicios prácticos y mini-proyectos.</p>
+          <p>Introducción práctica a la programación, pensamiento lógico y mini-proyectos.</p>
+          <a href="docente.html" class="btn-course">Ver curso</a>
         </div>
         <div class="course-card">
+          <i class="fa-brands fa-google course-icon"></i>
           <h3>Google App Script</h3>
-          <p>Automatiza Google Workspace con scripts, dashboards y formularios.</p>
+          <p>Automatiza Google Workspace con scripts, dashboards y formularios conectados.</p>
+          <a href="docente.html" class="btn-course">Ver curso</a>
         </div>
         <div class="course-card">
+          <i class="fa-solid fa-chart-line course-icon"></i>
           <h3>Looker Studio</h3>
-          <p>Construcción de reportes avanzados, métricas y visualizaciones.</p>
+          <p>Reportes avanzados, métricas y visualizaciones para toma de decisiones.</p>
+          <a href="docente.html" class="btn-course">Ver curso</a>
         </div>
         <div class="course-card">
+          <i class="fa-solid fa-person-running course-icon"></i>
           <h3>Proyectos Ágiles con Scrum</h3>
-          <p>Marco ágil completo para equipos, roles, ceremonias y casos reales.</p>
+          <p>Marco ágil completo: roles, ceremonias y casos reales de equipos.</p>
+          <a href="docente.html" class="btn-course">Ver curso</a>
         </div>
         <div class="course-card">
-          <h3>Programación para No Programadores</h3>
-          <p>Introducción práctica al pensamiento lógico y la automatización.</p>
+          <i class="fa-solid fa-server course-icon"></i>
+          <h3>Serverless Framework + AWS</h3>
+          <p>Arquitectura serverless con AWS Lambda y despliegues en la nube.</p>
+          <a href="docente.html" class="btn-course">Ver curso</a>
         </div>
         <div class="course-card">
-          <h3>Integración Jira + Make</h3>
-          <p>Automatización de procesos usando herramientas gratuitas.</p>
+          <i class="fa-solid fa-database course-icon"></i>
+          <h3>SQL + Power BI</h3>
+          <p>Desde consultas SQL hasta dashboards ejecutivos en Power BI.</p>
+          <a href="docente.html" class="btn-course">Ver curso</a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ========== SERVICIOS ========== -->
   <section id="services">
     <div class="container">
       <h2>Servicios</h2>
-      <ul>
-        <li>Consultoría en Automatización de Procesos (RPA + IA)</li>
-        <li>Arquitectura Empresarial y Soluciones</li>
-        <li>Desarrollo de Software a medida (.NET / Web)</li>
-        <li>Migración a la Nube y Modernización</li>
-        <li>Capacitación en Tecnología, Agilidad y Automatización</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>Puedes escribirme directamente por WhatsApp o correo:</p>
-      <p><strong>Email:</strong> fredygonzales03@gmail.com</p>
-      <p><strong>Web:</strong> fredygonzales.com</p>
-    </div>
-
-    <section id="social-banner">
-      <h3>Conéctate conmigo</h3>
-      <div class="social-icons">
-        <a href="https://youtube.com/@FredyGonzalesUriarte" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.facebook.com/fredybenjamin.gonzalesuriarte" target="_blank"><i
-            class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/fredy.gonzales.uriarte/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/fredy-benjam%C3%ADn-gonz%C3%A1les-uriarte-b7967159/" target="_blank"><i
-            class="fab fa-linkedin"></i></a>
-        <a href="https://www.tiktok.com/@fredygonzales1" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="https://x.com/iFredyi" target="_blank"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://open.spotify.com/user/22chjjc3fch4npq2yomiylozq" target="_blank"><i
-            class="fab fa-spotify"></i></a>
-        <a href="https://github.com/FredyGonzales" target="_blank"><i class="fab fa-github"></i></a>
+      <p class="section-subtitle">¿Tienes un reto tecnológico? Hablemos.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fa-solid fa-robot service-icon"></i>
+          <h3>Consultoría en Automatización</h3>
+          <p>RPA, integraciones y agentes IA para reducir trabajo manual y escalar operaciones.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-sitemap service-icon"></i>
+          <h3>Arquitectura Empresarial</h3>
+          <p>Diseño de soluciones E2E, inventario TI, C4 Model y modernización de sistemas legacy.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-laptop-code service-icon"></i>
+          <h3>Desarrollo a Medida</h3>
+          <p>Aplicaciones .NET, web y sistemas críticos adaptados a los procesos de tu organización.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-cloud-arrow-up service-icon"></i>
+          <h3>Migración a la Nube</h3>
+          <p>Journey to Cloud, Azure y GCP: estrategia, arquitectura e implementación.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-chalkboard-user service-icon"></i>
+          <h3>Capacitación Corporativa</h3>
+          <p>Workshops y cursos en tecnología, automatización, agilidad e IA para equipos empresariales.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-people-arrows service-icon"></i>
+          <h3>Agile Coaching</h3>
+          <p>Implementación de Scrum / Kanban, formación de squads y mejora continua orientada a resultados.</p>
+        </div>
       </div>
-    </section>
-
+    </div>
   </section>
 
-  <a href="https://wa.me/51991081578" class="whatsapp-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+  <!-- ========== CONTACTO ========== -->
+  <section id="contact">
+    <div class="container contact-flex">
+      <div class="contact-left">
+        <h2>Trabajemos juntos</h2>
+        <p>¿Tienes un proyecto de automatización, arquitectura o capacitación?<br>
+          Escríbeme y lo conversamos sin compromiso.</p>
+        <div class="contact-items">
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:fredygonzales03@gmail.com">fredygonzales03@gmail.com</a></p>
+          <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/51955475970" target="_blank">+51 955 475 970</a></p>
+          <p><i class="fa-solid fa-globe"></i> <a href="https://fredygonzales.com" target="_blank">fredygonzales.com</a></p>
+          <p><i class="fa-solid fa-location-dot"></i> Lima, Perú</p>
+        </div>
+        <div style="margin-top:1.5rem;">
+          <a href="https://wa.me/51955475970" class="btn-primary" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Escribir por WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <section id="social-banner">
+          <h3>Conéctate conmigo</h3>
+          <div class="social-icons">
+            <a href="https://youtube.com/@FredyGonzalesUriarte" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/fredybenjamin.gonzalesuriarte" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/fredy.gonzales.uriarte/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/fredy-benjam%C3%ADn-gonz%C3%A1les-uriarte-b7967159/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@fredygonzales1" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://x.com/iFredyi" target="_blank" title="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://open.spotify.com/user/22chjjc3fch4npq2yomiylozq" target="_blank" title="Spotify"><i class="fab fa-spotify"></i></a>
+            <a href="https://github.com/FredyGonzales" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
 
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/51955475970" class="whatsapp-float" target="_blank" title="Escribir por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
   <footer class="footer">
-    <p>Copyright © 2026 fredygonzales.com - Todos los derechos reservados</p>
+    <p>Copyright © 2026 fredygonzales.com — Todos los derechos reservados</p>
   </footer>
+
   <script src="js/main.js"></script>
 </body>
-
 </html>

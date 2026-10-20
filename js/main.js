@@ -1,37 +1,57 @@
+// =============================================
 // Smooth Scroll
+// =============================================
 document.querySelectorAll("a[href^='#']").forEach(link => {
   link.addEventListener("click", e => {
-    e.preventDefault();
     const target = document.querySelector(link.getAttribute("href"));
     if (target) {
-      window.scrollTo({
-        top: target.offsetTop - 70,
-        behavior: "smooth"
-      });
+      e.preventDefault();
+      window.scrollTo({ top: target.offsetTop - 70, behavior: "smooth" });
     }
   });
 });
 
-// WhatsApp button click tracking (opcional)
+// =============================================
+// Responsive nav toggle (burger)
+// =============================================
+const navToggle = document.getElementById("navToggle");
+const mainNav   = document.getElementById("mainNav");
+
+if (navToggle && mainNav) {
+  navToggle.addEventListener("click", () => {
+    mainNav.classList.toggle("open");
+  });
+  // Cerrar al hacer clic en un enlace (móvil)
+  mainNav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => mainNav.classList.remove("open"));
+  });
+}
+
+// =============================================
+// Animación de entrada para cards
+// =============================================
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll(
+  ".logro-card, .exp-card, .port-card, .course-card, .service-card, .skill-box"
+).forEach(el => {
+  el.classList.add("fade-in");
+  observer.observe(el);
+});
+
+// =============================================
+// WhatsApp tracking (opcional)
+// =============================================
 const whatsappBtn = document.querySelector(".whatsapp-float");
 if (whatsappBtn) {
   whatsappBtn.addEventListener("click", () => {
     console.log("WhatsApp contact clicked");
-  });
-}
-
-// Dynamic year footer (si lo quieres usar luego)
-const yearElement = document.getElementById("year");
-if (yearElement) {
-  yearElement.textContent = new Date().getFullYear();
-}
-
-// Responsive menu (futuro burger menu)
-const navToggle = document.getElementById("navToggle");
-const mainNav = document.getElementById("mainNav");
-
-if (navToggle) {
-  navToggle.addEventListener("click", () => {
-    mainNav.classList.toggle("open");
   });
 }
